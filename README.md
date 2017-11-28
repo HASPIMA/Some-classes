@@ -15,3 +15,4 @@ Classes for easy creation of differents tools, as sprites, buttons ...
 4. Button actions
 	*	Use `~.clicked()` to know when the button is clicked, it return boolean value.
 	*	Use `~.selected()` to know when the button is selected or the mouse is on  it, it return boolean value.
+	*	Use `~.resize()` to make the button relative to width, height.
