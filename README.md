@@ -35,7 +35,6 @@ Classes for easy creation of differents tools, as sprites, buttons ...
 		*	"start"	:	min values where in the array the animation start.
 		*	"end"	:	min values where in the array the animation end.
 		>	"start" and "end" have to be an JSONObject, where you set all the animation names. See the SpriteConfig example if you dont understand.
->To see an example please checkout Sprite Branch
 
 ## Class Button
 1. Create a new button
@@ -52,3 +51,19 @@ Classes for easy creation of differents tools, as sprites, buttons ...
 	*	Use `~.clicked()` to know when the button is clicked, it return boolean value.
 	*	Use `~.selected()` to know when the button is selected or the mouse is on  it, it return boolean value.
 	*	Use `~.resize()` to make the button relative to width, height.
+
+## Class Entity
+1. Create a new Entity.
+	*	Use the `Entity ~` class to create a new object.
+2. Initialize.
+	*	Using `~ = new Entity("type","name");`
+		*	`"type"`	:	Decide if is Enemy or Ally
+		*	`"name"`	:	What kind of enity is, in Ally you can select (Ninja, Mage), and in Enemy (Orc, Mage).
+3. What can Entity do?
+	*	`~.dealDamage("Hability",target)`	:	Entity deal to target the value of the "Hability" damage.
+	> target is an Entity Object.
+	*	`~.takeDamage(value)`	:	Entity take some value of damage.
+	
+> EntityConfig.json don't have real values, needs to be checked.
+
+>To see specific examples checkout the class branch.
